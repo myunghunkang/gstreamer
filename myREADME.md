@@ -70,4 +70,7 @@ gst-launch-1.0 --gst-debug-help
 
 GST_DEBUG=WARN,vp8dec:DEBUG gst-launch-1.0 playbin uri=https://gstreamer.freedesktop.org/data/media/sintel_trailer-480p.webm
 
-GST_DEBUG=*:WARN
+GST_DEBUG_FILE=/tmp/gst.log GST_DEBUG_DUMP_DOT_DIR=/tmp GST_DEBUG=WARN gst-launch-
+1.0 playbin uri=https://media.w3.org/2010/05/sintel/trailer.mp4 -v
+
+
